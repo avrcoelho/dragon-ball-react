@@ -31,10 +31,20 @@ describe('List Characters', () => {
         image: '../images/Goku.jpg',
       },
     ];
-    const { container } = render(<ListCharacters characters={characters} />);
+    const { container } = render(
+      <ListCharacters characters={characters} loading={false} />,
+    );
 
     const item = container.querySelectorAll('li');
 
     expect(item).toHaveLength(2);
+  });
+
+  it('Should be able to render load component', () => {
+    const { getByTestId } = render(
+      <ListCharacters characters={[]} loading={true} />,
+    );
+
+    expect(getByTestId('load')).toBeTruthy();
   });
 });

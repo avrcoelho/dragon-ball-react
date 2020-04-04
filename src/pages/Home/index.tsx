@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         itemActive={itemActive}
         setItemActive={(value: string) => setItemActive(value)}
       />
-      <ListCharacters characters={characters} />
+      <ListCharacters characters={characters} loading={loadingCharacters} />
     </>
   );
 };
