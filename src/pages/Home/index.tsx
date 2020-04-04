@@ -23,15 +23,15 @@ const Home: React.FC = () => {
     dispatch(Characters.loadRequest());
   }, [dispatch]);
 
-  console.log(characters);
-
   return (
     <>
       <Navbar
         itemActive={itemActive}
         setItemActive={(value: string) => setItemActive(value)}
       />
-      <ListCharacters characters={characters} loading={loadingCharacters} />
+      {itemActive === 'characters' && (
+        <ListCharacters characters={characters} loading={loadingCharacters} />
+      )}
     </>
   );
 };
