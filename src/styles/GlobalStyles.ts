@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     width: 100%;
+    font-family: sans-serif;
   }
 `;
 
