@@ -6,6 +6,7 @@ import * as Characters from '../../store/ducks/characters/actions';
 import { Character } from '../../store/ducks/characters/types';
 
 import Navbar from '../../components/Navbar';
+import ListCharacters from '../../components/ListCharacters';
 
 const Home: React.FC = () => {
   const [itemActive, setItemActive] = useState('characters');
@@ -25,10 +26,13 @@ const Home: React.FC = () => {
   console.log(characters);
 
   return (
-    <Navbar
-      itemActive={itemActive}
-      setItemActive={(value: string) => setItemActive(value)}
-    />
+    <>
+      <Navbar
+        itemActive={itemActive}
+        setItemActive={(value: string) => setItemActive(value)}
+      />
+      <ListCharacters characters={characters} />
+    </>
   );
 };
 
