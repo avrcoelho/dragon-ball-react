@@ -4,7 +4,13 @@ import createSagaMiddleware from 'redux-saga';
 import rootReducer from './ducks/rootReducer';
 import rootSaga from './ducks/rootSaga';
 
-export interface ApplicationState {}
+import { CharactersState } from './ducks/characters/types';
+import { PlanetsState } from './ducks/planets/types';
+
+export interface ApplicationState {
+  characters: CharactersState;
+  planets: PlanetsState;
+}
 
 const sagaMiddleware = createSagaMiddleware();
 
