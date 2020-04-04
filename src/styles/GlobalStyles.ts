@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 import 'font-awesome/css/font-awesome.css';
-import 'typeface-nunito';
 import 'react-toastify/dist/ReactToastify.css';
 
 const GlobalStyles = createGlobalStyle`
