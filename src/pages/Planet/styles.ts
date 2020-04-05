@@ -20,6 +20,7 @@ export const PlanetContainer = styled.div`
   border: solid 1px #453e50;
   border-radius: 5px;
   margin-top: 20px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   padding: 10px 10px;
