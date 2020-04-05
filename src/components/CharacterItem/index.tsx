@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 import { Character } from '../../store/ducks/characters/types';
 
-import { Container, Image, Name } from './styles';
+import { Container, Image, NameContainer, Name } from './styles';
 import defaultUser from '../../assets/images/defaultUser.png';
 
 type Props = {
@@ -24,7 +24,9 @@ const CharacterItem: React.FC<Props> = ({ character }) => (
       alt={character.name}
       data-testid="image"
     />
-    <Name data-testid="name">{character.name}</Name>
+    <NameContainer>
+      <Name data-testid="name">{character.name}</Name>
+    </NameContainer>
   </Container>
 );
 

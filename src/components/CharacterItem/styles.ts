@@ -4,7 +4,7 @@ export const Container = styled.li`
   width: 180px;
   height: 210px;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 10px 0;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
@@ -26,7 +26,18 @@ export const Image = styled.img`
   object-position: top;
 `;
 
+export const NameContainer = styled.div`
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Name = styled.span`
   color: #fff;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
