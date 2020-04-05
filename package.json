@@ -83,7 +83,8 @@
       "!src/index.tsx",
       "!src/App.tsx",
       "!src/routes/*",
-      "!src/styles/*"
+      "!src/styles/*",
+      "!src/services/*"
     ],
     "coverageDirectory": "<rootDir>/src/__tests__/coverage"
   },

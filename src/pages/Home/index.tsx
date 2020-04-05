@@ -32,9 +32,14 @@ const Home: React.FC = () => {
   );
 
   useEffect(() => {
-    dispatch(CharactersActions.loadRequest());
-    dispatch(PlanetsActions.loadRequest());
-  }, [dispatch]);
+    if (!charactersData.length) {
+      dispatch(CharactersActions.loadRequest());
+    }
+
+    if (!planetsData.length) {
+      dispatch(PlanetsActions.loadRequest());
+    }
+  }, [dispatch, charactersData, planetsData]);
 
   useEffect(() => {
     setSearch('');
