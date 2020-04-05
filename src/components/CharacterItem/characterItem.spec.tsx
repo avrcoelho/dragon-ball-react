@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import CharactersItem from '.';
+import CharacterItem from '.';
 
-describe('List Characters', () => {
-  it('Should be able to list characters', () => {
+describe('Character Item', () => {
+  it('Should be able to show data', () => {
     const character = {
       species: 'Saiyan',
       status: 'Alive',
@@ -19,7 +19,7 @@ describe('List Characters', () => {
     };
 
     const { getByTestId, getByText } = render(
-      <CharactersItem character={character} />,
+      <CharacterItem character={character} />,
     );
 
     expect(getByTestId('name')).toContainElement(getByText(character.name));

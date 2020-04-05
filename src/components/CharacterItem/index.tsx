@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import { Character } from '../../store/ducks/characters/types';
 
 import { Container, Image, NameContainer, Name } from './styles';
-import defaultUser from '../../assets/images/defaultUser.png';
+import defaultCharacter from '../../assets/images/defaultCharacter.png';
 
 type Props = {
   character: Character;
@@ -20,7 +20,7 @@ const CharacterItem: React.FC<Props> = ({ character }) => (
             )}`
           : character.image
       }
-      onError={(event: any) => (event.target.src = defaultUser)}
+      onError={(event: any) => (event.target.src = defaultCharacter)}
       alt={character.name}
       data-testid="image"
     />
