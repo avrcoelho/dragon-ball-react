@@ -3,13 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
     "axios": "^0.19.2",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
     "font-awesome": "^4.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -23,6 +17,12 @@
     "typesafe-actions": "^5.1.0"
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@testing-library/jest-dom": "^4.2.4",
@@ -84,7 +84,10 @@
       "!src/App.tsx",
       "!src/routes/*",
       "!src/styles/*",
-      "!src/services/*"
+      "!src/services/*",
+      "!src/store/index.ts",
+      "!src/store/ducks/*",
+      "!src/components/Footer/*"
     ],
     "coverageDirectory": "<rootDir>/src/__tests__/coverage"
   },
