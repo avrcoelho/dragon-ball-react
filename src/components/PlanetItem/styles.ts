@@ -21,6 +21,7 @@ export const Redirect = styled(Link)`
   padding: 10px 10px 0;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 `;
 
 export const Image = styled.img`
