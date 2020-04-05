@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <LogoContainer>
         <Logo src={logo} alt="DragonBall" />
         {planetName && (
-          <BackButton to="/">
+          <BackButton to="/" data-testid="buttonBack">
             <i className="fa fa-arrow-left"></i>
             <span>Voltar</span>
           </BackButton>

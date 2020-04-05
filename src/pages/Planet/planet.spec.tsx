@@ -7,9 +7,9 @@ import Planet from '.';
 jest.mock('react-redux');
 jest.mock('react-router-dom', () => ({
   useParams: () => ({
-    planetname: 'Vegeta',
+    planetName: 'Vegeta',
   }),
-  Link: '',
+  Link: 'Link',
 }));
 
 describe('Planet', () => {

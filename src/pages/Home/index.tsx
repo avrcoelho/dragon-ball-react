@@ -43,7 +43,11 @@ const Home: React.FC = () => {
   const planets = useMemo(
     () =>
       itemActive === 'planets' && search
-        ? planetsData.filter((planet: Planet) => planet.name === search)
+        ? planetsData.filter((planet: Planet) =>
+            planet.name
+              .toLocaleLowerCase()
+              .includes(search.toLocaleLowerCase()),
+          )
         : planetsData,
     [search, itemActive, planetsData],
   );
@@ -51,8 +55,10 @@ const Home: React.FC = () => {
   const characters = useMemo(
     () =>
       itemActive === 'characters' && search
-        ? charactersData.filter(
-            (character: Character) => character.name === search,
+        ? charactersData.filter((character: Character) =>
+            character.name
+              .toLocaleLowerCase()
+              .includes(search.toLocaleLowerCase()),
           )
         : charactersData,
     [search, itemActive, charactersData],
