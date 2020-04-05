@@ -36,7 +36,7 @@ const Planet: React.FC = () => {
 
   useEffect(() => {
     if (planetName) {
-      // dispatch(PlanetActions.loadRequest(planetName));
+      dispatch(PlanetActions.loadRequest(planetName));
     }
   }, [dispatch, planetName]);
 
