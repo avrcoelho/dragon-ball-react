@@ -95,15 +95,15 @@ _Isso irá criar um diretório `__tests__` dentro do diretório `src` com os arq
 
 ## Dependecias utilizadas
 
-[axios](https://github.com/axios/axios) - Requisições HTTP
-[font-awesome](https://fontawesome.com/) - Icones
-[redux](https://redux.js.org/) - Compartilhamento de estado entre componentes
-[reacr-redux](https://react-redux.js.org/) - Ligação do react com redux
-[react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start) - Gerenciamento de rotas da aplicação
-[react-toastify](https://github.com/fkhadra/react-toastify) - Exibir mensagens de erro
-[redux-saga](https://redux-saga.js.org/) - Lhe dar com requisições assincronas junto com o redux
-[styled-components](https://styled-components.com/) - Estilização dos elementos
-[typesafe-actions](https://github.com/piotrwitek/typesafe-actions) - Actions no redux
+- [axios](https://github.com/axios/axios) - Requisições HTTP
+- [font-awesome](https://fontawesome.com/) - Icones
+- [redux](https://redux.js.org/) - Compartilhamento de estado entre componentes
+- [reacr-redux](https://react-redux.js.org/) - Ligação do react com redux
+- [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start) - Gerenciamento de rotas a aplicação
+- [react-toastify](https://github.com/fkhadra/react-toastify) - Exibir mensagens de erro
+- [redux-saga](https://redux-saga.js.org/) - Lhe dar com requisições assincronas junto com o redux
+- [styled-components](https://styled-components.com/) - Estilização dos elementos
+- [typesafe-actions](https://github.com/piotrwitek/typesafe-actions) - Actions no redux
 
 ## Licença
 
