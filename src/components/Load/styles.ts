@@ -10,6 +10,6 @@ export const Container = styled.div`
 
   i {
     font-size: 60px;
-    color: #26222d;
+    color: #453e50;
   }
 `;
