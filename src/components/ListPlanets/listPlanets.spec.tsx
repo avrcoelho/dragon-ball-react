@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 
 import ListPlanets from '.';
 
@@ -24,7 +25,9 @@ describe('List Planets', () => {
       },
     ];
     const { container } = render(
-      <ListPlanets planets={planets} loading={false} />,
+      <MemoryRouter>
+        <ListPlanets planets={planets} loading={false} />
+      </MemoryRouter>,
     );
 
     const item = container.querySelectorAll('li');

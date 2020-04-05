@@ -1,20 +1,26 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.li`
   width: 180px;
   height: 210px;
   margin: 10px;
-  padding: 10px 10px 0;
   border-radius: 4px;
   display: inline-flex;
-  align-items: center;
-  flex-direction: column;
   border: solid 1px #453e50;
   border-radius: 5px;
 
   &:hover {
     background-color: #26222d;
   }
+`;
+
+export const Redirect = styled(Link)`
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Image = styled.img`

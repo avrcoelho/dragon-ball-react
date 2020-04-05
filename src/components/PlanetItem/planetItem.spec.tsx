@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 
 import PlanetItem from '.';
 
@@ -14,7 +15,11 @@ describe('Planet Item', () => {
       image: `${process.env.REACT_APP_URL_API}/images/Goku.jpg`,
     };
 
-    const { getByTestId, getByText } = render(<PlanetItem planet={planet} />);
+    const { getByTestId, getByText } = render(
+      <MemoryRouter>
+        <PlanetItem planet={planet} />
+      </MemoryRouter>,
+    );
 
     expect(getByTestId('name')).toContainElement(getByText(planet.name));
     expect(getByTestId('image').getAttribute('src')).toEqual(planet.image);

@@ -7,7 +7,6 @@ export const Container = styled.li`
   padding: 10px 10px 0;
   border-radius: 4px;
   display: inline-flex;
-  align-items: center;
   flex-direction: column;
   border: solid 1px #453e50;
   border-radius: 5px;
