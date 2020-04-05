@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
   width: 100%;
@@ -21,4 +22,19 @@ export const LogoContainer = styled.div`
 
 export const Logo = styled.img`
   height: 55px;
+`;
+
+export const BackButton = styled(Link)`
+  color: #000;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+
+  span {
+    font-size: 14px;
+  }
+
+  i {
+    margin-right: 4px;
+  }
 `;

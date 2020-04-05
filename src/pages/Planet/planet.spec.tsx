@@ -9,6 +9,7 @@ jest.mock('react-router-dom', () => ({
   useParams: () => ({
     planetname: 'Vegeta',
   }),
+  Link: '',
 }));
 
 describe('Planet', () => {

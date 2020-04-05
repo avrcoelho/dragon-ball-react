@@ -8,6 +8,7 @@ import { Character } from '../../store/ducks/characters/types';
 import { Planet } from '../../store/ducks/planets/types';
 
 import Navbar from '../../components/Navbar';
+import Header from '../../components/Header';
 import ListCharacters from '../../components/ListCharacters';
 import ListPlanets from '../../components/ListPlanets';
 
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Header />
       <Navbar
         itemActive={itemActive}
         setItemActive={(value: string) => setItemActive(value)}
