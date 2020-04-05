@@ -15,6 +15,7 @@ const Search: React.FC<Prop> = ({ search, value }) => (
       onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
         search(e.target.value)
       }
+      data-testid="inputeSarch"
     />
   </Container>
 );

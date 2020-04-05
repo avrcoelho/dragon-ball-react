@@ -6,6 +6,7 @@ export const Container = styled.main`
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 `;
 
 export const List = styled.ul`

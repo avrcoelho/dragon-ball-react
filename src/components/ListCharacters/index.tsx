@@ -17,7 +17,7 @@ const ListCharacters: React.FC<Props> = ({ characters, loading }) => (
     {loading ? (
       <Load />
     ) : (
-      <List>
+      <List data-testid="characterItem">
         {characters.map((character: Character) => (
           <CharacterItem key={character._id} character={character} />
         ))}

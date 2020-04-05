@@ -27,28 +27,13 @@ describe('Planet', () => {
       image: `${process.env.REACT_APP_URL_API}/images/Goku.jpg`,
     };
 
-    useSelector.mockImplementation(
-      (
-        callback: (arg0: {
-          planet: {
-            loading: boolean;
-            data: {
-              residents: string[];
-              _id: string;
-              created: string;
-              name: string;
-              url: string;
-              image: string;
-            };
-          };
-        }) => any,
-      ) =>
-        callback({
-          planet: {
-            loading: false,
-            data: planet,
-          },
-        }),
+    useSelector.mockImplementation((callback: any) =>
+      callback({
+        planet: {
+          loading: false,
+          data: planet,
+        },
+      }),
     );
 
     const { getByTestId, getByText, container, queryByTestId } = render(

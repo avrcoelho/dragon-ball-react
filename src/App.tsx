@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 
 import store from './store';
 import Routes from './routes';
+import Footer from './components/Footer';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <GlobalStyles />
       <ToastContainer autoClose={3000} />
       <Routes />
+      <Footer />
     </Provider>
   );
 }
