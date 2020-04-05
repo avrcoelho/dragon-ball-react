@@ -6,10 +6,12 @@ import rootSaga from './ducks/rootSaga';
 
 import { CharactersState } from './ducks/characters/types';
 import { PlanetsState } from './ducks/planets/types';
+import { PlanetState } from './ducks/planet/types';
 
 export interface ApplicationState {
   characters: CharactersState;
   planets: PlanetsState;
+  planet: PlanetState;
 }
 
 const sagaMiddleware = createSagaMiddleware();
