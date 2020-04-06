@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   width: 100%;
   height: 30px;
-  background-color: #e50d0d;
+  background-color: #f4511e;
   position: fixed;
   bottom: 0;
   display: flex;

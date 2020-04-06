@@ -9,10 +9,10 @@ describe('Navbar', () => {
       <Navbar itemActive="characters" setItemActive={() => {}} />,
     );
 
-    expect(getByTestId('characters')).toHaveStyle('background-color: #e50d0d');
+    expect(getByTestId('characters')).toHaveStyle('background-color: #f4511e');
     expect(getByTestId('characters')).toHaveStyle('color: #000');
     expect(getByTestId('planets')).toHaveStyle('background-color: transparent');
-    expect(getByTestId('planets')).toHaveStyle('color: #e50d0d');
+    expect(getByTestId('planets')).toHaveStyle('color: #f4511e');
   });
 
   it('Should be able planets item to have actived', () => {
@@ -20,11 +20,11 @@ describe('Navbar', () => {
       <Navbar itemActive="planets" setItemActive={() => {}} />,
     );
 
-    expect(getByTestId('planets')).toHaveStyle('background-color: #e50d0d');
+    expect(getByTestId('planets')).toHaveStyle('background-color: #f4511e');
     expect(getByTestId('planets')).toHaveStyle('color: #000');
     expect(getByTestId('characters')).toHaveStyle(
       'background-color: transparent',
     );
-    expect(getByTestId('characters')).toHaveStyle('color: #e50d0d');
+    expect(getByTestId('characters')).toHaveStyle('color: #f4511e');
   });
 });

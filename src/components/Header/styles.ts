@@ -7,7 +7,7 @@ export const Container = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #e50d0d;
+  background-color: #f4511e;
 `;
 
 export const LogoContainer = styled.div`

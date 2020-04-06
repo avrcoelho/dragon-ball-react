@@ -25,11 +25,11 @@ export const Item = styled.li`
   justify-content: center;
   height: 40px;
   width: 150px;
-  color: ${(props: Props) => (props.active ? '#000' : '#e50d0d')};
+  color: ${(props: Props) => (props.active ? '#000' : '#f4511e')};
   background-color: ${(props: Props) =>
-    props.active ? '#e50d0d' : 'transparent'};
+    props.active ? '#f4511e' : 'transparent'};
   font-weight: bold;
-  border: #e50d0d solid 2px;
+  border: #f4511e solid 2px;
   border-radius: 5px;
   margin: 0 5px;
   cursor: pointer;
