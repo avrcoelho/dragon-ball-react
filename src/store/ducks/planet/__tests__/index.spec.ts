@@ -49,4 +49,14 @@ describe('Planet reducer', () => {
       error: true,
     });
   });
+
+  it('RESET', () => {
+    const state = reducer(INITIAL_STATE, PlanetsActions.reset());
+
+    expect(state).toStrictEqual({
+      ...INITIAL_STATE,
+      loading: true,
+      data: null,
+    });
+  });
 });

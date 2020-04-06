@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ApplicationState } from '../../store';
 import * as CharactersActions from '../../store/ducks/characters/actions';
 import * as PlanetsActions from '../../store/ducks/planets/actions';
+import * as PlanetActions from '../../store/ducks/planet/actions';
 import { Character } from '../../store/ducks/characters/types';
 import { Planet } from '../../store/ducks/planets/types';
 
@@ -40,6 +41,10 @@ const Home: React.FC = () => {
       dispatch(PlanetsActions.loadRequest());
     }
   }, [dispatch, charactersData, planetsData]);
+
+  useEffect(() => {
+    dispatch(PlanetActions.reset());
+  }, [dispatch]);
 
   useEffect(() => {
     setSearch('');

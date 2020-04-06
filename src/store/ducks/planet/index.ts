@@ -27,6 +27,12 @@ const reducer: Reducer<PlanetState> = (state = INITIAL_STATE, action) => {
         loading: false,
         error: true,
       };
+    case PlanetTypes.RESET:
+      return {
+        ...state,
+        loading: true,
+        data: null,
+      };
     default:
       return state;
   }

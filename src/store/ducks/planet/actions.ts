@@ -7,3 +7,4 @@ export const loadRequest = (planetName: string) =>
 export const loadSuccess = (data: Planet) =>
   action(PlanetTypes.LOAD_SUCCESS, { data });
 export const loadFailure = () => action(PlanetTypes.LOAD_FAILURE);
+export const reset = () => action(PlanetTypes.RESET);
